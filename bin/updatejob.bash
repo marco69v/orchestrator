@@ -10,7 +10,7 @@
 # chec da implementare: valore delle CPU 
 # gestire erori update per record non trovati o campi non validi
 
-. /home/ee51732/unicredit//etc/orchestrator.conf
+. ../etc/orchestrator.conf
 # logging conf
 B_LOG --file $LOG/checkstatus.log #scrivo sullo stesso file del chiamante ma possiamo volendo isolarlo
 B_LOG -o false #altrimenti spara anche in stdout

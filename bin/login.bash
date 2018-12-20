@@ -7,8 +7,7 @@ function logIN {
 engine=$1
 DEBUG "login.bash - chiamato me con engine: $engine"
 
-###LOGIN=$(curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d "{  "username": $delphix_username,  "password": $delphix_password  }" "http://${engine}.${SUFFIX}:8282/masking/api/login")
-LOGIN=$(curl -s -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d "{  \"username\": \"$delphix_username\",  \"password\":  \"$delphix_password\" }"  "http://10.248.248.109:8282/masking/api/login")
+LOGIN=$(curl -s -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d "{  \"username\": \"$delphix_username\",  \"password\":  \"$delphix_password\" }"  "http://${engine}${SUFFIX}:8282/masking/api/login")
 DEBUG "login.bash - risposta alla LOGIN: $LOGIN"
 
 #AUTHKEY=$(echo -e "$LOGIN" | jq --raw-output '.Authorization')
@@ -21,7 +20,7 @@ INFO "login.bash - fatto refresh dell'hash per engine: $engine, authkey: $AUTHKE
 
 }
 
-. /home/ee51732/unicredit/etc/orchestrator.conf
+. ../etc/orchestrator.conf
 
 # logging conf
 B_LOG --file $LOG/checkstatus.log #scrivo sullo stesso file del chiamante ma possiamo volendo isolarlo

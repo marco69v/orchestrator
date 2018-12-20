@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /home/ee51732/unicredit/etc/orchestrator.conf
+. ../etc/orchestrator.conf
 
 idcoda=$1
 nome=$2
@@ -50,7 +50,7 @@ do
 done
 #-------------------------
 DEBUG "faccioio.bash - blocco ricerca executionID - JOBID: $JOBID" 
-EXECUTE=$(curl -s -X POST --header "Content-Type: application/json" --header "Accept: application/json" --header "Authorization: $AUTHKEY" -d "{ \"jobId\": $JOBID }" "http://10.248.248.109:8282/masking/api/executions")
+EXECUTE=$(curl -s -X POST --header "Content-Type: application/json" --header "Accept: application/json" --header "Authorization: $AUTHKEY" -d "{ \"jobId\": $JOBID }" "http://$nome:8282/masking/api/executions")
 DEBUG "faccioio.bash - blocco ricerca executionID - EXECUTE: $EXECUTE"
 EXECID=$(echo $EXECUTE | tr -d \{\}\"|cut -d\: -f 2 | cut -d\, -f 1)
 DEBUG "faccioio.bash - blocco ricerca executionID - EXECID: $EXECID"
@@ -68,3 +68,4 @@ $OHOME/bin/updatejob.bash $nome $cpu $EXECID $EXESTA $(date +%s)
 
 
 
+   

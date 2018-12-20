@@ -4,8 +4,7 @@
 function checklogin {
 
 # $1 nome engine
-###nome=$1
-nome="10.248.248.109"
+nome=$1
 
 LINE=$($CMD "select * from api_session" | grep $nome)
 DEBUG "trovata linea con engine: $nome in api_session: $LINE"
@@ -14,19 +13,16 @@ DEBUG "chiave risultante appena chiamata la funzione checklogin: $AUTHKEY"
 if [ "${AUTHKEY}z" = "z" ]; then
 	WARN "non c era un hash salvato per $nome.cerco di recuperarlo"
 	DEBUG "chiamo login.bash con nome: $nome"
-	###$OHOME/bin/login.bash $nome
-	$OHOME/bin/login.bash "10.248.248.109"
+	$OHOME/bin/login.bash $nome
 	AUTHKEY=$($CMD "select * from api_session" | grep $nome | cut -d\| -f 2)
 	DEBUG "nuova chiave: $AUTHKEY"
 else
 	DEBUG "trovata chiave: $AUTHKEY per engine: $nome, la provo"
-	###ck=$(curl -X GET --header "Accept: application/json" --header "Authorization: $AUTHKEY" "http://$1:8282/masking/api/system-information"|grep -o errorMessage)
-	ck=$(curl -s -X GET --header "Accept: application/json" --header "Authorization: $AUTHKEY" "http://10.248.248.109:8282/masking/api/system-information"|grep -o errorMessage)
+	ck=$(curl -X GET --header "Accept: application/json" --header "Authorization: $AUTHKEY" "http://$1:8282/masking/api/system-information"|grep -o errorMessage)
 	DEBUG "ck valorizzato solo se riesco a greppare errorMessage altrimenti è vuoto ck: $ck"
 	if [ "${ck}" = "errorMessage" ]; then
 		WARN "hash per accesso api su $nome scaduto. cerco di rigenerarlo"
-		### $OHOME/bin/login.bash $1
-		$OHOME/bin/login.bash "10.248.248.109"
+		$OHOME/bin/login.bash $1
 		AUTHKEY=$($CMD "select * from api_session" | grep $nome | cut -d\| -f 2)
 	fi
 fi
@@ -35,7 +31,7 @@ echo $AUTHKEY
 }
 
 
-. /home/ee51732/unicredit/etc/orchestrator.conf
+. ../etc/orchestrator.conf
 #questo script deve loopare sulle cpu ipegnate selezionate da engines e ne verifico lo stato su delphix
 
 # logging conf
@@ -164,15 +160,15 @@ if [ $NUM -gt 0 ]; then
 				INFO "job terminato"
 				$OHOME/bin/cleanupcpu.bash $nome $cpu
 				JCL=$($CMD "select jcl from coda_engine where idcoda=$idcoda;")
-				rm -f $TL/$APPLICAZIONE/$TABELLA/$JCL.wait
-				INFO "$TL/$APPLICAZIONE/$TABELLA/$JCL è stato rimosso"
+				rm -f $TL/$APP/$TAB/$JCL.wait
+				INFO "$TL/$APP/$TAB/$JCL è stato rimosso"
 				$CMD "update coda set stato = 'COMPLETED' where idcoda=$idcoda"
 				
 				;;
 			'RUNNING')
 				:
 				# aggiorno solo il timestamp
-                		$CMD "update engines set valore = 'T: $(date +%s)' where nome = '$nome' and chiave ='$cpu' and valore like 'T:%';"
+            	$CMD "update engines set valore = 'T: $(date +%s)' where nome = '$nome' and chiave ='$cpu' and valore like 'T:%';"
 				INFO "job con executionId $execID ancora running, aggiorno T con timestamp del check"
 				;;
 			'FAILED')

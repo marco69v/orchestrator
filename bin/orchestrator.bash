@@ -11,18 +11,18 @@ TAB=$(echo $1| cut -d\. -f 2)         #qualosaltro con $JCL. quindi questo diven
 
 
 FATAL "errore sconosciuto mentre ero in esecuzione di $1"
-test -e /home/ee51732/unicredit/var/tmp/$APP/$TAB/${JCL}.wait && rm /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait
-INFO "rimosso /home/ee51732/unicredit/var/tmp/$APP/$TAB/${JCL}.wait da catch di segnale di kill"
+test -e ../var/tmp/$APP/$TAB/${JCL}.wait && rm /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait
+INFO "rimosso ../var/tmp/$APP/$TAB/${JCL}.wait da catch di segnale di kill"
 
 }
 
 #da verificare il return code buono per errore per JCL
 trap "trapped $1; exit 20" SIGINT SIGABRT SIGKILL SIGQUIT
 
-. /home/ee51732/unicredit/etc/orchestrator.conf
+. ../etc/orchestrator.conf
 
 # logging conf
-B_LOG --file /home/ee51732/unicredit/log/orchestrator.log
+B_LOG --file ../log/orchestrator.log
 B_LOG -o false #altrimenti spara anche in stdout
 LOG_LEVEL_DEBUG
 
@@ -52,11 +52,11 @@ DEBUG "inserito record in CODA_ENGINE"
 
 
 #test -e $TL/$APP/$TAB || mkdir -p $TL/$APP/$TAB
-test -e /home/ee51732/unicredit/var/tmp/$APP/$TAB || mkdir -p /home/ee51732/unicredit/var/tmp/$APP/$TAB
+test -e ../var/tmp/$APP/$TAB || mkdir -p ../var/tmp/$APP/$TAB
 
 #touch  /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait
-echo $$ >  /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait
-DEBUG "creato file semaforo /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait"
+echo $$ >  ../var/tmp/$APP/$TAB/$JCL.wait
+DEBUG "creato file semaforo ../var/tmp/$APP/$TAB/$JCL.wait"
 
 # restituiamo un exit code diverso da 0 per inidicare al chiamante - mainframe - che qualcosa è andato storto 
 # anche se in questo punto è un po difficile riuscire a capire cosa
@@ -69,11 +69,11 @@ do
 	else
 		# il file è stato cancellato perche l'elaborazione è finita
 		# possibilmente qualche altra attivita
-		INFO "il file /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait è stato cancellato"
+		INFO "il file ../var/tmp/$APP/$TAB/$JCL.wait è stato cancellato"
 		RC=0
 		break
 	fi
-	TRACE "in polling su file /home/ee51732/unicredit/var/tmp/$APP/$TAB/$JCL.wait"
+	TRACE "in polling su file ../var/tmp/$APP/$TAB/$JCL.wait"
 	sleep 2
 done
 

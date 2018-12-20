@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /home/ee51732/unicredit/etc/orchestrator.conf
+. ../etc/orchestrator.conf
 
 # logging conf
 B_LOG --file $LOG/scheduler.log
@@ -15,7 +15,7 @@ LASTENGINEUSED=${LASTENGINEUSED:="0"}
 #ENGINES=$($CMD "select distinct(NOME) from ENGINES")
 ENG_NUM=$($CMD "select count(distinct(nome)) from ENGINES")
 echo numero engine trovato: $ENG_NUM
-###BASEENGNAME=USTDMTV00
+BASEENGNAME=some_name_of_an_engine_00 #parte del nome di uno degli engine, nel nostro caso erano del tipo engine001, engine002 e via cosi
 
 # prendo l'elenco dei job da schedulare
 JOBS=$($CMD "select * from CODA where STATO='QUEUED';")
@@ -64,8 +64,7 @@ do
 
 		#else
 			# popolo i file degli engine con le cpu libere
-			###cpu=$($CMD "select distinct(chiave) from engines where nome='$BASEENGNAME$SCHED' and valore ='A:' limit 1;")
-			cpu=$($CMD "select distinct(chiave) from engines where nome='10.248.248.109' and valore ='A:' limit 1;")
+			cpu=$($CMD "select distinct(chiave) from engines where nome='$BASEENGNAME$SCHED' and valore ='A:' limit 1;")
 			if [ "${cpu}z" = "z" ]; then
 				#non ci sono cpu libere
 				#rimettere a queued tutta la selezione
@@ -80,11 +79,9 @@ do
 			# CURL - chiamata inizio lavori a delphix
 	 		$CMD "update coda set stato='SCHEDULED' where idcoda='$idcoda';" #questa potrebbe e dovrebbe essere una delete
 			DEBUG "aggiornato stato a SCHEDULED al job in CODA con id $idcoda"
-			###$OHOME/bin/insert.bash $app $tab $BASEENGNAME$SCHED $cpu $idcoda
-			###$CMD "update coda_engine set nome='$BASEENGNAME$SCHED', cpu='$cpu' where idcoda=$idcoda;"
-			$OHOME/bin/insert.bash $app $tab "10.248.248.109" $cpu $idcoda
+			$OHOME/bin/insert.bash $app $tab $BASEENGNAME$SCHED $cpu $idcoda
 			DEBUG "chiamato insert.bash app:$app tab:$tab cpu:$cpu idcoda:$idcoda per preparare il checkstatus al lancio"
-			$CMD "update coda_engine set nome='10.248.248.109', cpu='$cpu' where idcoda=$idcoda;"
+			$CMD "update coda_engine set nome='$BASEENGNAME$SCHED', cpu='$cpu' where idcoda=$idcoda;"
 			DEBUG "associato su CODA_ENGINE l'idcoda $idcoda con $nome  e $cpu"
 			LASTENGINEUSED=$SCHED
 			SCHED=$(($SCHED+1))
