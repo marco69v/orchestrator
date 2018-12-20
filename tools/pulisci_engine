@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#read -n "sei sicuro di voler pulire tutte le cpu [y/n]" 
+#test 
+
+. ../etc/orchestrator.conf
+
+$CMD "select distinct(nome) from engines;" | while read engine
+do
+$CMD "select distinct(chiave) from engines where nome='$engine' and valore like 'S: %';" | while read cpu
+do
+
+../bin/cleanupcpu.bash $engine $cpu
+
+done
+
+done
+

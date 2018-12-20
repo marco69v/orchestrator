@@ -1,0 +1,13 @@
+###!/bin/bash
+
+ENG=engines
+
+cat $ENG | while read eng
+do
+	for i in $(seq 9 16)
+	do
+	echo -e "insert into engines (nome, chiave, valore) values ('$eng', 'CPU$i', 'I:');"
+	done
+
+done
+

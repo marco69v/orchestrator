@@ -1,0 +1,104 @@
+[2018-12-13 14:21:50.132][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 14:21:50.144][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 14:21:50.167][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 14:21:50.179][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 16:07:22.109][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-13 16:29:48.354][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-13 16:29:48.379][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 16:29:48.390][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 16:29:48.411][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 16:29:48.420][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 16:38:45.587][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-13 17:34:14.641][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-13 17:34:14.667][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 17:34:14.680][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 17:34:14.690][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 17:34:14.699][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 17:34:14.707][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-13 17:40:14.293][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-13 17:40:14.326][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 17:40:14.337][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 17:40:14.346][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 17:40:14.359][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 17:41:12.498][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-13 17:47:10.469][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-13 17:47:10.493][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 17:47:10.503][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 17:47:10.523][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 17:47:10.532][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 17:47:22.564][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-13 17:49:22.823][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 17:49:22.848][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 17:49:22.859][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 17:49:22.879][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 17:49:22.890][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait.wait
+[2018-12-13 17:49:56.968][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait.wait è stato cancellato
+[2018-12-13 18:15:44.938][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-13 18:15:44.963][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 18:15:44.973][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 18:15:44.994][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 18:15:45.002][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 18:18:33.060][INFO  ][main:27 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-13 18:18:33.084][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-13 18:18:33.094][DEBUG ][main:40 ] estratto idcoda
+[2018-12-13 18:18:33.113][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-13 18:18:33.122][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-13 19:27:24.474][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-13 19:27:24.736][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
+[2018-12-14 09:36:19.170][INFO  ][main:27 ] lanciato 49 alskjdalsjkd
+[2018-12-14 09:36:19.188][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-14 09:36:19.198][DEBUG ][main:40 ] estratto idcoda
+[2018-12-14 09:36:19.219][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-14 09:36:19.229][DEBUG ][main:49 ] creato file semaforo /home/ee51732/unicredit/var/tmp/alskjdalsjkd/alskjdalsjkd/alskjdalsjkd.wait
+[2018-12-14 09:38:37.522][INFO  ][main:62 ] il file /home/ee51732/unicredit/var/tmp/alskjdalsjkd/alskjdalsjkd/alskjdalsjkd.wait è stato cancellato
+[2018-12-14 09:38:49.204][INFO  ][main:27 ] lanciato 49 qweqwe
+[2018-12-14 09:38:49.229][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-14 09:38:49.239][DEBUG ][main:40 ] estratto idcoda
+[2018-12-14 09:38:49.258][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-14 09:38:49.268][DEBUG ][main:50 ] creato file semaforo /home/ee51732/unicredit/var/tmp/qweqwe/qweqwe/qweqwe.wait
+[2018-12-14 09:38:51.271][FATAL ][trapped:7  ] errore sconosciuto mentre ero in esecuzione di qweqwe
+[2018-12-14 09:38:54.752][INFO  ][main:27 ] lanciato 49 qweqweq
+[2018-12-14 09:38:54.778][DEBUG ][main:38 ] aggiunto record in CODA
+[2018-12-14 09:38:54.788][DEBUG ][main:40 ] estratto idcoda
+[2018-12-14 09:38:54.808][DEBUG ][main:42 ] inserito record in CODA_ENGINE
+[2018-12-14 09:38:54.817][DEBUG ][main:50 ] creato file semaforo /home/ee51732/unicredit/var/tmp/qweqweq/qweqweq/qweqweq.wait
+[2018-12-14 09:44:16.592][INFO  ][main:31 ] lanciato 49 ttttt
+[2018-12-14 09:44:16.609][DEBUG ][main:42 ] aggiunto record in CODA
+[2018-12-14 09:44:16.620][DEBUG ][main:44 ] estratto idcoda
+[2018-12-14 09:44:16.639][DEBUG ][main:46 ] inserito record in CODA_ENGINE
+[2018-12-14 09:44:16.649][DEBUG ][main:54 ] creato file semaforo /home/ee51732/unicredit/var/tmp/ttttt/ttttt/ttttt.wait
+[2018-12-14 09:45:59.688][INFO  ][main:31 ] lanciato 49 vvvv
+[2018-12-14 09:45:59.709][DEBUG ][main:42 ] aggiunto record in CODA
+[2018-12-14 09:45:59.719][DEBUG ][main:44 ] estratto idcoda
+[2018-12-14 09:45:59.746][DEBUG ][main:46 ] inserito record in CODA_ENGINE
+[2018-12-14 09:45:59.756][DEBUG ][main:54 ] creato file semaforo /home/ee51732/unicredit/var/tmp/vvvv/vvvv/vvvv.wait
+[2018-12-14 09:48:34.864][INFO  ][main:35 ] lanciato 49 dddd
+[2018-12-14 09:48:34.889][DEBUG ][main:46 ] aggiunto record in CODA
+[2018-12-14 09:48:34.899][DEBUG ][main:48 ] estratto idcoda
+[2018-12-14 09:48:34.920][DEBUG ][main:50 ] inserito record in CODA_ENGINE
+[2018-12-14 09:48:34.929][DEBUG ][main:58 ] creato file semaforo /home/ee51732/unicredit/var/tmp/dddd/dddd/dddd.wait
+[2018-12-14 09:51:20.148][INFO  ][main:35 ] lanciato 49 kkkkk
+[2018-12-14 09:51:20.178][DEBUG ][main:46 ] aggiunto record in CODA
+[2018-12-14 09:51:20.190][DEBUG ][main:48 ] estratto idcoda
+[2018-12-14 09:51:20.213][DEBUG ][main:50 ] inserito record in CODA_ENGINE
+[2018-12-14 09:51:20.223][DEBUG ][main:58 ] creato file semaforo /home/ee51732/unicredit/var/tmp/kkkkk/kkkkk/kkkkk.wait
+[2018-12-14 09:51:53.298][INFO  ][main:35 ] lanciato 49 wwwww
+[2018-12-14 09:51:53.317][DEBUG ][main:46 ] aggiunto record in CODA
+[2018-12-14 09:51:53.330][DEBUG ][main:48 ] estratto idcoda
+[2018-12-14 09:51:53.352][DEBUG ][main:50 ] inserito record in CODA_ENGINE
+[2018-12-14 09:51:53.364][DEBUG ][main:58 ] creato file semaforo /home/ee51732/unicredit/var/tmp/wwwww/wwwww/wwwww.wait
+[2018-12-14 09:52:15.423][FATAL ][trapped:12 ] errore sconosciuto mentre ero in esecuzione di wwwww
+[2018-12-14 09:52:15.433][INFO  ][trapped:14 ] rimosso /home/ee51732/unicredit/var/tmp///.wait da catch di segnale di kill
+[2018-12-14 09:55:07.367][INFO  ][main:36 ] lanciato 49 rrrrr
+[2018-12-14 09:55:07.403][DEBUG ][main:47 ] aggiunto record in CODA
+[2018-12-14 09:55:07.416][DEBUG ][main:49 ] estratto idcoda
+[2018-12-14 09:55:07.456][DEBUG ][main:51 ] inserito record in CODA_ENGINE
+[2018-12-14 09:55:07.467][DEBUG ][main:59 ] creato file semaforo /home/ee51732/unicredit/var/tmp/rrrrr/rrrrr/rrrrr.wait
+[2018-12-14 09:55:19.509][FATAL ][trapped:13 ] errore sconosciuto mentre ero in esecuzione di rrrrr
+[2018-12-14 09:55:19.521][INFO  ][trapped:15 ] rimosso /home/ee51732/unicredit/var/tmp/rrrrr/rrrrr/rrrrr.wait da catch di segnale di kill
+[2018-12-14 12:04:31.460][INFO  ][main:36 ] lanciato 49 FAM0ASSI.TSFAMAN1.UL
+[2018-12-14 12:04:31.484][DEBUG ][main:47 ] aggiunto record in CODA
+[2018-12-14 12:04:31.494][DEBUG ][main:49 ] estratto idcoda
+[2018-12-14 12:04:31.513][DEBUG ][main:51 ] inserito record in CODA_ENGINE
+[2018-12-14 12:04:31.521][DEBUG ][main:59 ] creato file semaforo /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait
+[2018-12-14 12:05:15.622][INFO  ][main:72 ] il file /home/ee51732/unicredit/var/tmp/FAM0ASSI/TSFAMAN1/FAM0ASSI.TSFAMAN1.UL.wait è stato cancellato
