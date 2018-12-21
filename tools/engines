@@ -1,5 +1,21 @@
-USTDMTV003
-USTDMTV004
-USTDMTV005
-USTDMTV006
-USTDMTV007
+# template per inserimento record in tabella engines sul DB
+# va inserito il nome dell'engine (che dove essere un nome risolvibile dai dns visto che viene usato per i curl verso delphix)
+# seguito da un separatore (:) ed il numero di CPU
+# ES: engine1:32
+#engine001:8
+#engine002:8
+#engine003:16
+#engine004:16
+#engine005:16
+#engine006:16
+#engine007:16   => sarebbero state 96 "CPU"
+# considerando che le prime due macchine nel nostro caso hanno solo 64Gb di RAM e le altre 128 e che verranno allocati 8Gb per job
+# ci preserviamo delle CPU e quindi RAM. per cui il risultato è:
+engine001:6
+engine002:6
+engine003:12
+engine004:12
+engine005:12
+engine006:12
+engine007:12
+#saranno 72
