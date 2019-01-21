@@ -15,12 +15,21 @@ LOG_LEVEL_ALL
 
 while true; do
 
-	if [ $( ps -ef | grep -v grep | grep $CSN) ]; then
-		DEBUG "Un altro processo di $CSN è già running"
+if [ $( ps -ef | grep -v grep | grep scheduler.bash) ]; then
+		DEBUG "Un altro processo di scheduler.bash è già running"
+		exit 1
+	else
+		$OHOME/bin/scheduler.bash
+		DEBUG "eseguo $CSN"
+	fi
+
+	# uso un default di 5 secondi se non settato
+	sleep ${SLEEP:-5} 	if [ $( ps -ef | grep -v grep | grep checkstatus.bash) ]; then
+		DEBUG "Un altro processo di checkstatus è già running"
 		exit 1
 	else
 		$OHOME/bin/checkstatus.bash
-		DEBUG "eseguo $CSN"
+		DEBUG "eseguo checkstatus"
 	fi
 
 	# uso un default di 5 secondi se non settato
